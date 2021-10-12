@@ -4,14 +4,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
   <title>Alan Seed</title>
 </head>
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <div class="navbar-nav">
-    <a class="nav-item nav-link active" href="../index.html">Home</a>
-    <a class="nav-item nav-link" href="../assets/Work-Experience.html">Experience</a>
-    <a class="nav-item nav-link" href="../assets/Research.html">Research</a>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="../index.html">Home</a>
+      <a class="nav-item nav-link"
+        href="../assets/Work-Experience.html">Experience</a>
+      <a class="nav-item nav-link active" href="../assets/Research.html">Research</a>
+      <a class="nav-item nav-link" href="../assets/Projects.html">Projects</a>
+    </div>
+  </nav>
+
+  <div class="card p-1 m-1">
+    <h5 class="card-title">Radar rainfall nowcasting</h5>
+    <div class="card-body">
+      <p class="card-text">
+        High resolution forecasts of rainfall in the next 6 hours are needed as input for flash flood warning systems. Rainfall has a very specific statistical structure because it is highly intermittent and non-Gaussian. I collaborated with the Met Office (U.K.) on the development of the Short Term Ensemble Prediction System (STEPS). STEPS represents a major advance in the science of stochastic space/time rainfall modelling and provides a robust and fast algorithm for generating large stochastic ensembles of rainfall forecasts.
+      </p>
+      <p class="card-text">
+        My role in the collaboration was to develop the theoretical framework for STEPS based on multiplicative cascades and to write the C++ code for the first operational version.
+      </p>
+      <p class = "card-text">
+        STEPS is designed to provide operational guidance for the heavy rainfall and flash flood warning services. Licenses for STEPS have issued for use in Japan, Canada, Russia, Belgium, Finland, and Singapore. 
+      </p>
+    </div>
   </div>
-</nav>
+<div class="card p-1 m-1">
+  <h5 class="card-title">Radar rainfall estimation</h5>
+  <div class="card-body">
+  <p class="card-text">
+    My other major contribution in science has been developing and maintaining Rainfields, a real-time radar rainfall estimation system. Rainfields is written in C++ and uses a suite of about 50 algorithms to perform quality control on the incoming radar data and to use the data to estimate the rain rate on the ground. It is a significant operational system that generates 5000 products an hour from 60 radars around Australia that are used as guidance for flash flood forecasting and heavy rain warning.
+  </p>
+  <p class="card-text">
+    I contributed to Rainfields through my research into the algorithms that are needed for data quality control and radar rainfall estimation. I am especially interested in developing robust algorithms and managing the overall complexity of the system. I provided scientific oversight to PhD students, scientists in my team, and visiting Research Fellows who have developed or improved the algorithms. I supervised the development of the operational software that was based on a prototype that I had written, worked with weather forecasters to develop a forecast process, and assisted with developing training material. 
+  </p>
+  </div>
+</div>
+
+
+
+</body>
+</html>

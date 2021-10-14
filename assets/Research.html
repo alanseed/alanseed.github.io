@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light p-1 m-1">
     <div class="navbar-nav">
       <a class="nav-item nav-link" href="../index.html">Home</a>
       <a class="nav-item nav-link"
@@ -22,18 +22,20 @@
       <a class="nav-item nav-link" href="../assets/Projects.html">Projects</a>
     </div>
   </nav>
-
   <div class="card p-1 m-1">
-    <h5 class="card-title">Radar rainfall nowcasting</h5>
+    <h5 class="card-title">Stochastic space-time models of rainfall</h5>
     <div class="card-body">
       <p class="card-text">
-        High resolution forecasts of rainfall in the next 6 hours are needed as input for flash flood warning systems. Rainfall has a very specific statistical structure because it is highly intermittent and non-Gaussian. I collaborated with the Met Office (U.K.) on the development of the Short Term Ensemble Prediction System (STEPS). STEPS represents a major advance in the science of stochastic space/time rainfall modelling and provides a robust and fast algorithm for generating large stochastic ensembles of rainfall forecasts.
+        Research into the spatial and dynamic scaling structure of rainfall based on the analysis of large sets of high-resolution radar data. Of particular interest is the use of simplified versions of a cascade model for use in real-time applications, generating anisotropic fields, and the role of non-stationarity over large domains. 
       </p>
+    </div>
+  </div>
+
+  <div class="card p-1 m-1">
+    <h5 class="card-title">Nowcasting Rainfall</h5>
+    <div class="card-body">
       <p class="card-text">
-        My role in the collaboration was to develop the theoretical framework for STEPS based on multiplicative cascades and to write the C++ code for the first operational version.
-      </p>
-      <p class = "card-text">
-        STEPS is designed to provide operational guidance for the heavy rainfall and flash flood warning services. Licenses for STEPS have issued for use in Japan, Canada, Russia, Belgium, Finland, and Singapore. 
+        High resolution forecasts of rainfall in the next 6 hours are needed as input for flash flood warning systems. I developed the first version of the Short-Term Ensemble Prediction System (STEPS) in collaboration with the Met Office (U.K). STEPS represents a major advance in the science of stochastic space/time rainfall modelling and provides a robust and fast algorithm for generating large ensembles of forecasts. Licenses for STEPS have issued for use in Japan, Canada, Russia, Belgium, Finland, Singapore, and Korea. I provided technical support for the development of pySTEPS, the open-source version of STEPS.
       </p>
     </div>
   </div>
@@ -41,10 +43,7 @@
   <h5 class="card-title">Radar rainfall estimation</h5>
   <div class="card-body">
   <p class="card-text">
-    My other major contribution in science has been developing and maintaining Rainfields, a real-time radar rainfall estimation system. Rainfields is written in C++ and uses a suite of about 50 algorithms to perform quality control on the incoming radar data and to use the data to estimate the rain rate on the ground. It is a significant operational system that generates 5000 products an hour from 60 radars around Australia that are used as guidance for flash flood forecasting and heavy rain warning.
-  </p>
-  <p class="card-text">
-    I contributed to Rainfields through my research into the algorithms that are needed for data quality control and radar rainfall estimation. I am especially interested in developing robust algorithms and managing the overall complexity of the system. I provided scientific oversight to PhD students, scientists in my team, and visiting Research Fellows who have developed or improved the algorithms. I supervised the development of the operational software that was based on a prototype that I had written, worked with weather forecasters to develop a forecast process, and assisted with developing training material. 
+    Weather radar remains a key source of high-resolution rainfall data that are suitable for urban hydrological applications. I undertake research into algorithms that are needed for data quality control and radar rainfall estimation. I am especially interested in developing robust algorithms and managing the overall complexity of the system. I provided technical oversight for Rainfields, the Bureau’s operational national radar rainfall estimation system. Rainfields includes a suite of about 50 algorithms to perform quality control on the incoming radar data and to use the data to estimate the rain rate on the ground.
   </p>
   </div>
 </div>
